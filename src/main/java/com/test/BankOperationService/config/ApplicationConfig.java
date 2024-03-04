@@ -12,19 +12,31 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
+/**
+ * Конфигурация приложения, определяющая настройки аутентификации и безопасности.
+ */
 @Configuration
 @RequiredArgsConstructor
 public class ApplicationConfig {
 
     private final UserRepository repository;
 
+    /**
+     * Создает сервис пользователей для аутентификации.
+     *
+     * @return сервис пользователей
+     */
     @Bean
     public UserDetailsService userDetailsService() {
         return username -> repository.findByEmail(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
 
+    /**
+     * Создает провайдер аутентификации.
+     *
+     * @return провайдер аутентификации
+     */
     @Bean
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
@@ -33,12 +45,23 @@ public class ApplicationConfig {
         return authProvider;
     }
 
-
+    /**
+     * Создает менеджер аутентификации.
+     *
+     * @param config конфигурация аутентификации
+     * @return менеджер аутентификации
+     * @throws Exception если не удалось получить менеджер аутентификации из конфигурации
+     */
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
         return config.getAuthenticationManager();
     }
 
+    /**
+     * Создает кодировщик паролей.
+     *
+     * @return кодировщик паролей
+     */
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
