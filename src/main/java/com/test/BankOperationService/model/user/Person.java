@@ -1,6 +1,6 @@
 package com.test.BankOperationService.model.user;
 
-import com.test.BankOperationService.model.token.Token;
+import com.test.BankOperationService.model.Account.Account;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,36 +9,46 @@ import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "_user")
-public class User implements UserDetails {
+
+public class Person implements UserDetails{
 
   @Id
-  @GeneratedValue
-  private Integer id;
-  private String firstname;
-  private String lastname;
-  private String email;
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+
+  private String firstName;
+
+  private String lastName;
+
   private String password;
+
+  private LocalDate dateOfBirth;
+
+  @ElementCollection
+  private List<String> phones = new ArrayList<>();
+
+  @ElementCollection
+  private List<String> emails = new ArrayList<>();
+
+  @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL)
+  private List<Account> accounts = new ArrayList<>();
 
   @Enumerated(EnumType.STRING)
   private Role role;
-
-  @OneToMany(mappedBy = "user")
-  private List<Token> tokens;
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
     return role.getAuthorities();
   }
-
 
   @Override
   public String getPassword() {
@@ -47,9 +57,8 @@ public class User implements UserDetails {
 
   @Override
   public String getUsername() {
-    return email;
+    return emails.get(0);
   }
-
   @Override
   public boolean isAccountNonExpired() {
     return true;

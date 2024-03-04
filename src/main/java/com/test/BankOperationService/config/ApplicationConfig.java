@@ -1,6 +1,6 @@
 package com.test.BankOperationService.config;
 
-import com.test.BankOperationService.model.user.UserRepository;
+import com.test.BankOperationService.model.user.PersonRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @RequiredArgsConstructor
 public class ApplicationConfig {
 
-    private final UserRepository repository;
+    private final PersonRepository repository;
 
     /**
      * Создает сервис пользователей для аутентификации.
@@ -28,9 +28,10 @@ public class ApplicationConfig {
      */
     @Bean
     public UserDetailsService userDetailsService() {
-        return username -> repository.findByEmail(username)
+        return username -> repository.findByAnyEmail(username)
                 .orElseThrow(() -> new UsernameNotFoundException("User not found"));
     }
+
 
     /**
      * Создает провайдер аутентификации.

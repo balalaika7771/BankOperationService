@@ -1,7 +1,7 @@
 package com.test.BankOperationService.model.token;
 
 
-import com.test.BankOperationService.model.user.User;
+import com.test.BankOperationService.model.user.Person;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -31,5 +31,5 @@ public class Token {
 
   @ManyToOne(fetch = FetchType.LAZY)
   @JoinColumn(name = "user_id")
-  public User user;
+  public Person person;
 }
