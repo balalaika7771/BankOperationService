@@ -8,4 +8,7 @@ import java.util.Optional;
 public interface PersonRepository extends JpaRepository<Person, Integer> {
   @Query("SELECT u FROM Person u JOIN u.emails e WHERE e = :email")
   Optional<Person> findByAnyEmail(String email);
+  boolean existsByEmails(String email);
+
+  boolean existsByPhonesContains(String phone);
 }

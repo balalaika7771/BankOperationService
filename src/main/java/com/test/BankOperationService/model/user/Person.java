@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -33,9 +34,13 @@ public class Person implements UserDetails{
 
   private LocalDate dateOfBirth;
 
+
+  @UniqueElements
   @ElementCollection
   private List<String> phones = new ArrayList<>();
 
+
+  @UniqueElements
   @ElementCollection
   private List<String> emails = new ArrayList<>();
 
