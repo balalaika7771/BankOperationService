@@ -1,4 +1,6 @@
 spring:
+  main:
+    allow-bean-definition-overriding: true
   datasource:
     url: jdbc:postgresql://77.232.139.157:5432/bankService
     username: postgres
@@ -13,7 +15,10 @@ spring:
         format_sql: true
     database: POSTGRESQL
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-
+  data:
+    elasticsearch:
+      repositories:
+        enabled: true
 application:
   security:
     jwt:

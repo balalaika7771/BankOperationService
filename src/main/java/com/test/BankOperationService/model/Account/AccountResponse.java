@@ -1,4 +1,4 @@
-package com.test.BankOperationService.controllers.personController;
+package com.test.BankOperationService.model.Account;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

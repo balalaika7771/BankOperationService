@@ -1,7 +1,7 @@
 package com.test.BankOperationService.controllers.personController;
 
 
-import com.test.BankOperationService.model.Account.Account;
+import com.test.BankOperationService.model.Account.AccountResponse;
 import com.test.BankOperationService.model.user.EmailAddValidator;
 import com.test.BankOperationService.model.user.Person;
 import com.test.BankOperationService.model.user.PersonService;
