@@ -1,4 +1,4 @@
-package com.test.BankOperationService.controllers.personCreate;
+package com.test.BankOperationService.controllers.personAuth;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class AuthenticationRequest {
 
-  private String email;
+  String email;
   String password;
 }

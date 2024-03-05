@@ -1,9 +1,8 @@
-package com.test.BankOperationService.controllers.personCreate;
+package com.test.BankOperationService.controllers.personAuth;
 
-import com.test.BankOperationService.model.user.CreateUserRequest;
-import com.test.BankOperationService.model.user.EmailValidator;
+import com.test.BankOperationService.model.user.EmailAddValidator;
 import com.test.BankOperationService.model.user.PersonService;
-import com.test.BankOperationService.model.user.PhoneValidator;
+import com.test.BankOperationService.model.user.PhoneAddValidator;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,27 +19,27 @@ import java.io.IOException;
 @RestController
 @Validated
 @RequestMapping("/auth")
-public class PersonController {
+public class PersonAuthController {
 
     private final AuthenticationService service;
     private final PersonService personService;
 
-    private final PhoneValidator phoneValidator;
-    private final EmailValidator emailValidator;
+    private final PhoneAddValidator phoneAddValidator;
+    private final EmailAddValidator emailAddValidator;
     @Autowired
-    public PersonController(AuthenticationService service, PersonService personService, PhoneValidator phoneValidator, EmailValidator emailValidator) {
+    public PersonAuthController(AuthenticationService service, PersonService personService, PhoneAddValidator phoneAddValidator, EmailAddValidator emailAddValidator) {
         this.service = service;
         this.personService = personService;
-        this.phoneValidator = phoneValidator;
-        this.emailValidator = emailValidator;
+        this.phoneAddValidator = phoneAddValidator;
+        this.emailAddValidator = emailAddValidator;
     }
 
     @PostMapping("/register")
     public ResponseEntity<AuthenticationResponse> register(
             @RequestBody CreateUserRequest request, BindingResult bindingResult
     ) {
-        phoneValidator.validate(request.getPhone(), bindingResult);
-        emailValidator.validate(request.getEmail(), bindingResult);
+        phoneAddValidator.validate(request.getPhone(), bindingResult);
+        emailAddValidator.validate(request.getEmail(), bindingResult);
         if (bindingResult.hasErrors()) {
             // Обработка ошибок валидации
             return ResponseEntity.badRequest().build();
@@ -52,7 +51,7 @@ public class PersonController {
     public ResponseEntity<AuthenticationResponse> authenticate(
             @RequestBody AuthenticationRequest request
     ) {
-        return ResponseEntity.ok(service.authenticate(request));
+            return ResponseEntity.ok(service.authenticate(request));
     }
 
     @PostMapping("/refresh-token")

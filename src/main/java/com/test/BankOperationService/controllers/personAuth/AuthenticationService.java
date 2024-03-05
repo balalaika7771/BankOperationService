@@ -1,4 +1,4 @@
-package com.test.BankOperationService.controllers.personCreate;
+package com.test.BankOperationService.controllers.personAuth;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -10,7 +10,6 @@ import com.test.BankOperationService.model.user.*;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
-import org.hibernate.validator.internal.constraintvalidators.bv.EmailValidator;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -39,7 +38,8 @@ public class AuthenticationService {
             .dateOfBirth(LocalDate.parse(request.getDateOfBirth(), DateTimeFormatter.ofPattern("dd.MM.yyyy")))
             .phones(Collections.singletonList(request.getPhone()))
             .emails(Collections.singletonList(request.getEmail()))
-            .password(request.getPassword())
+            .password(passwordEncoder.encode(request.getPassword()))
+            .role(Role.valueOf("USER"))
             .build();
     Account account = Account.builder()
             .owner(person)

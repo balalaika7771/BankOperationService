@@ -1,4 +1,4 @@
-package com.test.BankOperationService.controllers.personCreate;
+package com.test.BankOperationService.controllers.personAuth;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;

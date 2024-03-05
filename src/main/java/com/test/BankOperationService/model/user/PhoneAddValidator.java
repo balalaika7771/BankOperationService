@@ -5,11 +5,11 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 @Component
-public class EmailValidator implements Validator {
+public class PhoneAddValidator implements Validator {
 
     private final PersonRepository personRepository;
 
-    public EmailValidator(PersonRepository personRepository) {
+    public PhoneAddValidator(PersonRepository personRepository) {
         this.personRepository = personRepository;
     }
 
@@ -20,10 +20,10 @@ public class EmailValidator implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        String email = (String) target;
-        // Проверяем уникальность email'ов
-        if (personRepository.existsByEmails(email)) {
-            errors.rejectValue("emails", "email.duplicate", "Email '" + email + "' уже занят");
+        String phone = (String) target;
+        // Проверяем уникальность телефонных номеров
+        if (personRepository.existsByPhonesContains(phone)) {
+            errors.rejectValue("phones", "phone.duplicate", "Телефонный номер '" + phone + "' уже занят");
         }
     }
 }

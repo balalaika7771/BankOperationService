@@ -2,10 +2,7 @@ package com.test.BankOperationService.model.user;
 
 import com.test.BankOperationService.model.Account.Account;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.hibernate.validator.constraints.UniqueElements;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -19,7 +16,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-
+@Getter
+@Setter
 public class Person implements UserDetails{
 
   @Id
@@ -40,9 +38,11 @@ public class Person implements UserDetails{
   private List<String> phones = new ArrayList<>();
 
 
+
   @UniqueElements
-  @ElementCollection
+  @ElementCollection(fetch = FetchType.EAGER)
   private List<String> emails = new ArrayList<>();
+
 
   @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL)
   private List<Account> accounts = new ArrayList<>();

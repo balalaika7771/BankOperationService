@@ -1,8 +1,8 @@
 package com.test.BankOperationService;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.test.BankOperationService.controllers.personCreate.PersonController;
-import com.test.BankOperationService.model.user.CreateUserRequest;
+import com.test.BankOperationService.controllers.personAuth.PersonAuthController;
+import com.test.BankOperationService.controllers.personAuth.CreateUserRequest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +16,9 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(PersonController.class)
+@WebMvcTest(PersonAuthController.class)
 @AutoConfigureMockMvc
-public class PersonControllerTest {
+public class PersonAuthControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
