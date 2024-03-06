@@ -4,7 +4,6 @@ import com.test.BankOperationService.model.Account.Account;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.validator.constraints.UniqueElements;
-import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
