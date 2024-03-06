@@ -1,50 +1,75 @@
 [![CI](https://github.com/balalaika7771/BankOperationService/actions/workflows/build.yml/badge.svg)](https://github.com/balalaika7771/BankOperationService/actions/workflows/build.yml)
+# Bank Operation Service
 
-# BankOperationService
+This project is a banking application developed using Spring Boot 3 and Java 17. It provides various endpoints for managing bank operations such as transfers, account management, and user information.
 
-BankOperationService - это простой сервис для управления счётами в банке.
+## Features
 
-## Требования
+- Transfer money between accounts
+- Manage user accounts
+- Add and remove email/phone contacts
+- View account information
 
+## Technologies Used
+
+- Spring Boot 3
 - Java 17
-- Spring Boot 3.x
+- PostgreSQL
 - Docker
+- Maven
 
-## Установка
+## Getting Started
 
-1. Клонируйте репозиторий:
+To run this project locally, you need to have Docker installed on your machine. Follow these steps:
 
-    ```bash
-    git clone https://github.com/balalaika7771/BankOperationService.git
-    ```
+1. Clone the repository:
 
-2. Убедитесь, что у вас установлены Java 17 и Docker.
+```bash
+git clone https://github.com/balalaika7771/BankOperationService.git
+```
 
-3. Запустите Docker, чтобы развернуть базу данных PostgreSQL:
+2. Navigate to the project directory:
 
-    ```bash
-    docker-compose up -d
-    ```
+```bash
+cd bank-operation-service
+```
 
-4. Соберите и запустите приложение с помощью Maven:
+3. Start the PostgreSQL container:
 
-    ```bash
-    mvn clean package
-    java -jar target/BankOperationService.jar
-    ```
+```bash
+docker-compose up -d
+```
 
-5. После завершения работы приложения, остановите контейнеры Docker:
+4. Build and run the Spring Boot application:
 
-    ```bash
-    down
-    ```
+```bash
+./mvnw spring-boot:run
+```
 
-## Использование
+The application will be accessible at `http://localhost:8080`.
 
-- Откройте документацию OpenAPI, чтобы узнать о доступных API: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+## API Documentation
 
-- Следуйте документации API для выполнения операций в банке.
+The API documentation is generated using OpenAPI. You can access it at `http://localhost:8080/swagger-ui/index.html`.
 
-## Дополнительная информация
+## Maven Documentation
 
-- Документация Maven: [docs/index.html](docs/index.html)
+You can generate the Maven documentation by running:
+
+```bash
+./mvnw site
+```
+
+The documentation will be available in the `target/site` directory.
+
+## Workflow
+
+The GitHub Actions workflow is configured to automatically generate and deploy the Maven documentation to GitHub Pages on every push to the `main` branch.
+
+## Contributing
+
+Contributions are welcome! Feel free to submit pull requests or open issues for any improvements or feature requests.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
