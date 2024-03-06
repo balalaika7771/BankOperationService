@@ -1,3 +1,5 @@
+[![CI](https://github.com/balalaika7771/BankOperationService/actions/workflows/build.yml/badge.svg)](https://github.com/balalaika7771/BankOperationService/actions/workflows/build.yml)
+
 # BankOperationService
 
 BankOperationService - это простой сервис для управления счётами в банке.
