@@ -693,3 +693,427 @@ Caused by: java.net.SocketException: Network is unreachable: no further informat
 14:15:37.695 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - constraint "fkksb2hxc45vvh7unyvc2c977cr" of relation "account" does not exist, skipping
 14:15:40.975 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 14:15:41.285 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:29:37.664 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:29:37.829 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:29:40.182 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.182 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:29:40.255 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.255 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:29:40.334 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.334 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:29:40.418 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.418 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:29:40.512 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.512 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:29:40.579 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.579 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:29:40.647 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.647 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:29:40.728 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.728 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:29:40.796 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.796 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:29:40.904 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:29:40.905 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:29:44.159 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:29:44.427 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:31:19.121 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:31:19.127 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:31:21.263 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.263 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:31:21.350 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.351 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:31:21.461 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.462 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:31:21.551 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.552 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:31:21.645 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.645 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:31:21.806 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.806 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:31:21.895 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:21.895 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:31:22.056 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:22.057 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:31:22.407 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:22.407 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:31:22.499 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:31:22.499 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:31:25.724 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:31:25.976 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:37:07.869 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:37:07.884 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:37:10.429 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:10.429 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:37:10.519 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:10.519 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:37:10.613 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:10.613 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:37:10.712 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:10.712 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:37:10.802 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:10.802 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:37:11.170 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:11.170 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:37:11.259 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:11.259 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:37:11.346 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:11.346 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:37:11.434 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:11.434 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:37:11.525 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:37:11.526 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:37:15.191 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:37:15.541 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:38:36.366 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:38:36.381 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:38:39.359 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:39.359 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:38:39.447 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:39.447 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:38:39.578 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:39.578 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:38:39.668 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:39.669 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:38:39.757 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:39.758 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:38:40.075 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:40.076 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:38:40.176 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:40.176 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:38:40.266 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:40.267 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:38:40.354 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:40.354 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:38:40.495 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:38:40.497 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:38:44.140 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:38:44.369 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:40:00.123 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:40:00.132 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:40:02.621 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:02.621 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:40:02.725 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:02.725 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:40:02.815 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:02.816 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:40:02.918 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:02.918 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:40:03.031 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:03.032 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:40:03.156 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:03.156 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:40:03.243 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:03.243 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:40:03.342 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:03.343 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:40:03.427 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:03.427 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:40:03.514 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:40:03.515 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:40:06.660 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:40:06.958 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:43:54.027 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:43:54.036 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:43:56.428 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:56.428 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:43:56.511 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:56.511 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:43:56.863 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:56.863 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:43:56.947 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:56.947 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:43:57.029 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:57.029 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:43:57.099 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:57.099 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:43:57.171 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:57.171 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:43:57.462 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:57.462 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:43:57.529 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:57.529 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:43:57.597 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:43:57.598 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:44:03.625 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:44:04.241 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:45:18.798 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:45:18.809 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:45:21.543 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:21.543 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:45:21.632 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:21.632 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:45:21.745 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:21.747 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:45:21.852 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:21.852 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:45:21.938 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:21.939 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:45:22.042 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:22.043 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:45:22.150 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:22.151 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:45:22.240 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:22.241 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:45:22.336 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:22.336 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:45:22.459 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:45:22.461 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:45:26.334 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:45:26.993 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:54:27.926 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:54:27.934 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:54:30.086 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.087 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:54:30.230 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.230 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:54:30.330 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.330 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:54:30.420 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.421 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:54:30.512 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.512 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:54:30.600 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.601 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:54:30.692 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.693 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:54:30.784 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.785 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:54:30.874 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:30.874 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:54:31.109 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:54:31.110 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:54:34.868 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:54:35.304 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+14:57:14.323 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+14:57:14.330 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+14:57:17.493 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:17.493 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+14:57:17.616 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:17.616 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+14:57:17.716 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:17.716 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+14:57:17.815 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:17.815 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+14:57:17.941 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:17.941 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+14:57:18.025 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:18.025 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+14:57:18.113 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:18.114 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+14:57:18.207 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:18.207 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+14:57:18.359 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:18.360 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+14:57:18.499 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+14:57:18.499 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+14:57:22.342 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:57:22.780 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:00:54.649 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:00:54.662 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:00:56.985 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:56.986 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:00:57.088 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.088 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:00:57.202 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.203 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:00:57.306 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.306 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:00:57.431 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.431 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:00:57.544 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.544 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:00:57.633 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.633 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:00:57.720 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.721 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:00:57.808 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.808 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:00:57.897 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:00:57.897 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:01:01.496 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:01:01.985 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:03:17.326 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:03:17.333 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:03:19.799 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:19.800 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:03:19.884 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:19.885 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:03:19.974 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:19.975 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:03:20.062 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.062 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:03:20.153 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.153 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:03:20.231 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.232 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:03:20.311 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.311 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:03:20.445 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.445 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:03:20.526 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.527 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:03:20.616 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:03:20.616 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:03:24.193 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:03:24.508 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:05:26.791 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:05:26.798 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:05:29.110 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.110 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:05:29.196 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.196 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:05:29.284 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.284 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:05:29.420 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.420 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:05:29.520 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.520 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:05:29.609 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.610 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:05:29.696 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.696 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:05:29.782 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.783 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:05:29.871 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.871 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:05:29.960 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:05:29.960 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:05:33.642 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:05:33.988 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:09:42.453 [http-nio-8080-exec-1] WARN  c.t.B.c.p.PersonController - [error]Delete /phones:234234
+15:16:19.828 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:16:19.840 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:16:22.783 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:22.784 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:16:22.936 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:22.937 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:16:23.029 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.030 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:16:23.122 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.122 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:16:23.208 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.209 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:16:23.294 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.294 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:16:23.380 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.380 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:16:23.551 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.552 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:16:23.652 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.653 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:16:23.743 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:16:23.743 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:16:27.252 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:16:27.517 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:25:39.591 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:25:39.599 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:25:41.884 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:41.884 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:25:41.976 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:41.976 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:25:42.064 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.064 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:25:42.299 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.299 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:25:42.390 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.391 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:25:42.475 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.476 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:25:42.564 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.565 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:25:42.655 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.656 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:25:42.848 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.849 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:25:42.950 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:25:42.950 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:25:45.918 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:25:46.156 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:25:51.498 [http-nio-8080-exec-9] WARN  o.s.core.models.ParameterInfo - Using the following default value : firstName,asc, without spring conversionService
+15:27:04.673 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable'; Cannot convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable' for property 'pageable': no matching editors or conversion strategy found]
+15:27:34.260 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable'; Cannot convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable' for property 'pageable': no matching editors or conversion strategy found]
+15:28:06.381 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable'; Cannot convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable' for property 'pageable': no matching editors or conversion strategy found]
+15:28:39.922 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable'; Cannot convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable' for property 'pageable': no matching editors or conversion strategy found]
+15:29:05.229 [http-nio-8080-exec-5] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentConversionNotSupportedException: Failed to convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable'; Cannot convert value of type 'java.lang.String' to required type 'org.springframework.data.domain.Pageable' for property 'pageable': no matching editors or conversion strategy found]
+15:29:34.785 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:29:34.795 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:29:37.164 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.164 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:29:37.310 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.310 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:29:37.432 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.432 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:29:37.585 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.586 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:29:37.722 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.722 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:29:37.821 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.821 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:29:37.993 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:37.993 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:29:38.119 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:38.119 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:29:38.220 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:38.220 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:29:38.495 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:29:38.495 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:29:41.996 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:29:42.289 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:31:00.159 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:31:00.170 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:31:02.736 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:02.737 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:31:02.851 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:02.851 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:31:03.015 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:03.015 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:31:03.135 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:03.135 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:31:03.223 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:03.223 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:31:03.343 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:03.343 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:31:03.714 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:03.714 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:31:03.917 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:03.918 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:31:04.021 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:04.022 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:31:04.127 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:31:04.128 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:31:07.422 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:31:07.701 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:32:29.517 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'pageable' for method parameter type Pageable is not present]
+15:32:53.345 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'pageable' for method parameter type Pageable is not present]
+15:33:28.318 [http-nio-8080-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'pageable' for method parameter type Pageable is not present]
+15:33:51.727 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'pageable' for method parameter type Pageable is not present]
+15:34:15.383 [http-nio-8080-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'pageable' for method parameter type Pageable is not present]
+15:36:12.196 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:36:12.210 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:36:15.468 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:15.468 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+15:36:17.264 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:17.264 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+15:36:22.337 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:22.337 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+15:36:29.243 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:29.243 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+15:36:34.592 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:34.592 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+15:36:34.681 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:34.681 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+15:36:34.774 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:34.774 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+15:36:34.867 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:34.867 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+15:36:35.098 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:35.098 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+15:36:35.209 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+15:36:35.209 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+15:36:38.958 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:36:39.224 [main] WARN  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Multiple @RequestMapping annotations found on public org.springframework.http.ResponseEntity com.test.BankOperationService.controllers.transfer.TransferController.transferMoney(com.test.BankOperationService.controllers.transfer.TransferRequest), but only the first will be used: [@org.springframework.web.bind.annotation.RequestMapping(consumes={}, headers={}, method={}, name="", params={}, path={"/transfer"}, produces={}, value={"/transfer"}), @org.springframework.web.bind.annotation.PostMapping(consumes={}, headers={}, name="", params={}, path={}, produces={}, value={})]
+15:54:36.994 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+15:54:37.004 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+15:54:48.559 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@459bf87c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
+15:55:28.508 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning

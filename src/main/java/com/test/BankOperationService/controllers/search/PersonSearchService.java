@@ -28,7 +28,7 @@ public class PersonSearchService {
     }
 
     public Page<Person> searchPersons(LocalDate birthDate, String phone, String fullName, String email,
-                                      Sort sort, Pageable pageable) {
+                                       Pageable pageable) {
         Specification<Person> spec = (root, query, cb) -> {
             List<Predicate> predicates = new ArrayList<>();
 
@@ -48,7 +48,7 @@ public class PersonSearchService {
             return cb.and(predicates.toArray(new Predicate[0]));
         };
 
-        return personRepository.findAll(spec, PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), sort));
+        return personRepository.findAll(spec, PageRequest.of(pageable.getPageNumber(), pageable.getPageSize(), pageable.getSort()));
     }
 }
 

@@ -4,6 +4,11 @@ package com.test.BankOperationService.controllers.search;
 import com.test.BankOperationService.controllers.personController.PersonController;
 import com.test.BankOperationService.model.Account.AccountResponse;
 import com.test.BankOperationService.model.user.Person;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.enums.ParameterIn;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
@@ -31,30 +36,30 @@ public class SearchController {
         this.personSearchService = personSearchService;
     }
 
+    @Operation(summary = "Search persons with optional filtering and pagination")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Successful operation")
+    })
     @GetMapping("/persons")
     public Page<PersonDTO> searchPersons(
-            @RequestParam(required = false,defaultValue = "01.01.1700") String dateOfBirth,
+            @Parameter(in = ParameterIn.QUERY, name = "dateOfBirth", description = "Date of birth in format 'dd.MM.yyyy'")
+            @RequestParam(required = false, defaultValue = "01.01.1700") String dateOfBirth,
+            @Parameter(in = ParameterIn.QUERY, name = "phone", description = "Phone number")
             @RequestParam(required = false) String phone,
+            @Parameter(in = ParameterIn.QUERY, name = "fullName", description = "Full name")
             @RequestParam(required = false) String fullName,
+            @Parameter(in = ParameterIn.QUERY, name = "email", description = "Email address")
             @RequestParam(required = false) String email,
-            @RequestParam(defaultValue = "firstName,asc") String sort,
             Pageable pageable
     ) {
         logger.info("search /persons:");
-        List<Sort.Order> orders = new ArrayList<>();
-        String[] properties = sort.split(",");
-        for (int i = 0; i < properties.length; i += 2) {
-            Sort.Direction direction = Sort.Direction.fromString(properties[i + 1]);
-            orders.add(new Sort.Order(direction, properties[i]));
-        }
-        Sort sortObj = Sort.by(orders);
+
 
         List<PersonDTO> resultList = personSearchService.searchPersons(
                         LocalDate.parse(dateOfBirth, DateTimeFormatter.ofPattern("dd.MM.yyyy")),
                         phone,
                         fullName,
                         email,
-                        sortObj,
                         pageable)
                 .stream().map(
                         person -> PersonDTO.builder()

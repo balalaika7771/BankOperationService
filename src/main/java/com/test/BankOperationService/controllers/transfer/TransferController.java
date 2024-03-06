@@ -3,6 +3,9 @@ package com.test.BankOperationService.controllers.transfer;
 import com.test.BankOperationService.model.Account.Account;
 import com.test.BankOperationService.model.user.Person;
 import com.test.BankOperationService.model.user.PersonService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -24,8 +27,12 @@ public class TransferController {
         this.personService = personService;
     }
 
+    @Operation(summary = "Transfer money between accounts")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Money transferred successfully"),
+            @ApiResponse(responseCode = "400", description = "Failed to transfer money")
+    })
     @PostMapping
-    @RequestMapping("/transfer")
     public ResponseEntity<String> transferMoney(@RequestBody TransferRequest transferRequest) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Person person = (Person)authentication.getPrincipal();
