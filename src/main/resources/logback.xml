@@ -1,0 +1,38 @@
+<configuration>
+
+    <!-- Определение паттерна для вывода логов -->
+    <property name="LOG_PATTERN" value="%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
+
+    <!-- Определение аппендера для вывода логов в файл -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>logs/myapp.log</file> <!-- Путь к файлу логов -->
+        <append>true</append> <!-- Добавлять логи в конец файла -->
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern> <!-- Использовать определенный паттерн для форматирования логов -->
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level> <!-- Позволяет пропускать только сообщения с уровнем WARN и выше -->
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- Определение аппендера для вывода логов на консоль -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${LOG_PATTERN}</pattern> <!-- Использовать определенный паттерн для форматирования логов -->
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level> <!-- Позволяет пропускать только сообщения с уровнем INFO и выше -->
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- Настройка корневого логгера -->
+    <root level="INFO">
+        <appender-ref ref="FILE" /> <!-- Подключение аппендера для файла -->
+        <appender-ref ref="CONSOLE" /> <!-- Подключение аппендера для консоли -->
+    </root>
+
+</configuration>

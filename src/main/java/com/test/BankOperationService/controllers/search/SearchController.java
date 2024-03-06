@@ -1,8 +1,11 @@
 package com.test.BankOperationService.controllers.search;
 
 
+import com.test.BankOperationService.controllers.personController.PersonController;
 import com.test.BankOperationService.model.Account.AccountResponse;
 import com.test.BankOperationService.model.user.Person;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
@@ -21,6 +24,7 @@ import java.util.stream.Collectors;
 @RestController
 public class SearchController {
 
+    private static final Logger logger = LoggerFactory.getLogger(SearchController.class);
     private final PersonSearchService personSearchService;
 
     public SearchController(PersonSearchService personSearchService) {
@@ -29,13 +33,14 @@ public class SearchController {
 
     @GetMapping("/persons")
     public Page<PersonDTO> searchPersons(
-            @RequestParam(required = false) String dateOfBirth,
+            @RequestParam(required = false,defaultValue = "01.01.1700") String dateOfBirth,
             @RequestParam(required = false) String phone,
             @RequestParam(required = false) String fullName,
             @RequestParam(required = false) String email,
             @RequestParam(defaultValue = "firstName,asc") String sort,
             Pageable pageable
     ) {
+        logger.info("search /persons:");
         List<Sort.Order> orders = new ArrayList<>();
         String[] properties = sort.split(",");
         for (int i = 0; i < properties.length; i += 2) {
