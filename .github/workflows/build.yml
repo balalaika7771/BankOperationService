@@ -1,27 +1,41 @@
-name: Java CI/CD
+name: CI
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Set up JDK
+      - name: Set up JDK 11
         uses: actions/setup-java@v2
         with:
           distribution: 'adopt'
           java-version: '21'
 
       - name: Build with Maven
-        run: mvn -B clean test
+        run: mvn -B clean package
 
+      - name: Run tests
+        run: mvn test
 
+      - name: Docker Compose up
+        run: docker-compose up -d
 
+      - name: Wait for PostgreSQL to start
+        run: docker-compose exec postgres bash -c 'while !</dev/tcp/localhost/5432; do sleep 1; done;'
 
+      - name: Run database migrations
+        run: mvn flyway:migrate
+
+      - name: Run application
+        run: mvn spring-boot:run
+
+      - name: Shutdown Docker Compose
+        run: docker-compose down
