@@ -32,7 +32,7 @@ public class TransferController {
             @ApiResponse(responseCode = "200", description = "Money transferred successfully"),
             @ApiResponse(responseCode = "400", description = "Failed to transfer money")
     })
-    @PostMapping
+    @PostMapping("/transfer")
     public ResponseEntity<String> transferMoney(@RequestBody TransferRequest transferRequest) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Person person = (Person)authentication.getPrincipal();

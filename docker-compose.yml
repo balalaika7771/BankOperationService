@@ -7,11 +7,10 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: bank_db
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=bank_db
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - /home/--path-to-folder/data/postgres:/var/lib/postgresql/data
 
 volumes:
   pgdata:
