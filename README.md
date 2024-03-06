@@ -62,10 +62,6 @@ You can generate the Maven documentation by running:
 
 The documentation will be available in the `target/site` directory.
 
-## Workflow
-
-The GitHub Actions workflow is configured to automatically generate and deploy the Maven documentation to GitHub Pages on every push to the `main` branch.
-
 ## Contributing
 
 Contributions are welcome! Feel free to submit pull requests or open issues for any improvements or feature requests.

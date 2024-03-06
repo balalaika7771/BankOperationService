@@ -37,9 +37,3 @@ jobs:
 
       - name: Stop and remove PostgreSQL container
         run: docker-compose -f docker-compose.yml down
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./target/site
