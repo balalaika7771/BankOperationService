@@ -7,6 +7,7 @@ import com.test.BankOperationService.model.user.EmailAddValidator;
 import com.test.BankOperationService.model.user.Person;
 import com.test.BankOperationService.model.user.PersonService;
 import com.test.BankOperationService.model.user.PhoneAddValidator;
+import io.swagger.v3.oas.annotations.Operation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +35,7 @@ public class PersonController {
         this.phoneAddValidator = phoneAddValidator;
     }
 
-
+    @Operation(summary = "Get person emails")
     @GetMapping("/emails")
     public List<String> getPersonEmails() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -43,6 +44,7 @@ public class PersonController {
         return personService.getPersonEmails(person.getId());
     }
 
+    @Operation(summary = "Get person phones")
     @GetMapping("/phones")
     public List<String> getPersonPhones() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -51,6 +53,7 @@ public class PersonController {
         return personService.getPersonPhones(person.getId());
     }
 
+    @Operation(summary = "Get person accounts")
     @GetMapping("/accounts")
     public List<AccountResponse> getPersonAccounts() {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -67,7 +70,7 @@ public class PersonController {
                                         .build())
                 .toList();
     }
-
+    @Operation(summary = "Add email to person")
     @PostMapping("/emails")
     public ResponseEntity<?> addEmail(@RequestBody String email, BindingResult bindingResult) {
         emailAddValidator.validate(email,bindingResult);
@@ -82,7 +85,7 @@ public class PersonController {
         logger.info("[ok]Post /emails:");
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
-
+    @Operation(summary = "Add phone to person")
     @PostMapping("/phones")
     public ResponseEntity<?> addPhone(@RequestBody String phone, BindingResult bindingResult) {
         phoneAddValidator.validate(phone,bindingResult);
@@ -97,7 +100,7 @@ public class PersonController {
         logger.info("[ok]Post /phones:");
         return ResponseEntity.status(HttpStatus.CREATED).build();
     }
-
+    @Operation(summary = "Delete email from person")
     @DeleteMapping("/emails")
     public ResponseEntity<?> deleteEmail(@RequestParam String email) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -110,7 +113,7 @@ public class PersonController {
         logger.info("[ok]Delete /emails:");
         return ResponseEntity.ok().build();
     }
-
+    @Operation(summary = "Delete phone from person")
     @DeleteMapping("/phones")
     public ResponseEntity<?> deletePhone(@RequestParam String phone) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

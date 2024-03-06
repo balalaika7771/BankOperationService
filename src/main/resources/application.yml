@@ -1,12 +1,8 @@
 spring:
-  profiles:
-    active: true
-  main:
-    allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:postgresql://77.232.139.157:5432/bankService
+    url: jdbc:postgresql://postgres:5432/bank_db
     username: postgres
-    password: 1q2w3e4rniger
+    password: postgres
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
@@ -15,12 +11,9 @@ spring:
     properties:
       hibernate:
         format_sql: true
-    database: POSTGRESQL
+    database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  data:
-    elasticsearch:
-      repositories:
-        enabled: true
+
 application:
   security:
     jwt:
@@ -28,6 +21,3 @@ application:
       expiration: 86400000 # a day
       refresh-token:
         expiration: 604800000 # 7 days
-springdoc:
-  swagger-ui:
-    path: swagger-ui.html

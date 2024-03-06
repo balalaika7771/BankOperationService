@@ -1117,3 +1117,46 @@ Caused by: java.net.SocketException: Network is unreachable: no further informat
 15:54:37.004 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
 15:54:48.559 [main] WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection org.postgresql.jdbc.PgConnection@459bf87c (This connection has been closed.). Possibly consider using a shorter maxLifetime value.
 15:55:28.508 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:13:52.817 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:52.817 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+16:13:53.328 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:53.328 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+16:13:53.470 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:53.471 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+16:13:53.876 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:53.876 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+16:13:54.030 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:54.031 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+16:13:54.131 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:54.131 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+16:13:54.227 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:54.227 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+16:13:54.331 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:54.332 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+16:13:54.471 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:54.471 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+16:13:54.634 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:13:54.634 [SpringApplicationShutdownHook] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+16:14:20.173 [main] WARN  org.hibernate.dialect.Dialect - HHH000511: The 10.23.0 version for [org.hibernate.dialect.PostgreSQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 12.0.0. Check the community dialects project for available legacy versions.
+16:14:20.189 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+16:14:23.046 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:23.046 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "account" does not exist, skipping
+16:14:23.338 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:23.338 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_emails" does not exist, skipping
+16:14:23.461 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:23.462 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "person_phones" does not exist, skipping
+16:14:23.595 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:23.596 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - relation "token" does not exist, skipping
+16:14:23.965 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:23.967 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "account" does not exist, skipping
+16:14:24.076 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:24.076 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person" does not exist, skipping
+16:14:24.173 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:24.173 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_emails" does not exist, skipping
+16:14:24.271 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:24.271 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "person_phones" does not exist, skipping
+16:14:24.646 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:24.646 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - table "token" does not exist, skipping
+16:14:24.754 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+16:14:24.754 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - sequence "token_seq" does not exist, skipping
+16:14:30.624 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
